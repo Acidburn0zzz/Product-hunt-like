@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="icon" href="favicon.ico" />
+    <title>Product Hunt</title>
+</head>
+<body>
+  <header>
+  <div class="nav-left">
+  <img src="images/logo.png" alt="logo">
+  <form class="search-bar">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" placeholder="Discover your next favorite thing..." required>
+  </form>
+  </div>
+  <div class="nav-right">
+    <i class="fa fa-ellipsis-h fa-lg"></i>
+    <i class="fa fa-plus fa-lg"></i>
+    <div class="notifs"></div>
+    <div class="avatar"></div>
+  </div>
+</header>
+<div id="container">
+
+  <!-- GAUCHE -->
+  <div id="sidebar">
+  <!-- #page>div.logo+ul#nav>li*5>a{Item $} -->
+      <ul id="home">
+        <li class="cat-title" id="home_min"><a href="">Home</a></li>
+        <li><a href="">Collections</a></li>
+        <li><a href="">LIVE Chats</a></li>
+      </ul>
+      <ul id="category">
+        <li class="cat-title"><a href="">Catégories</a></li>
+        <li><a href="">Games</a></li>
+        <li><a href="">Books</a></li>
+        <li><a href="">Podcasts</a></li>
+        <li><a href="">Tech</a></li>
+        <li><a href="">Item 6</a></li>
+        <li><a href="">Item 7</a></li>
+      </ul>
+      <ul id="topics">
+        <li class="cat-title"><a href="">Topics</a></li>
+        <li><a href="">Developer Tools</a></li>
+        <li><a href="">Get Shit Done</a></li>
+        <li><a href="">Slack</a></li>
+        <li><div class="trend"><a href="">User Experience</a><div class="fire"></div></div></li>
+        <li><div class="trend"><a href="">Messaging</a><div class="fire"></div></div></li>
+        <li><div class="trend"><a href="">Design Tools</a><div class="fire"></div></div></li>
+        <li><a href=""><span>See All</span></a></li>
+      </ul>
+  </div>
+<!-- GAUCHE -->
+
+
+
+  <!-- CENTRE -->
+  <div class="global_centreEtDroit">
+    <div class="global_centre">
+
+      <div class="today">
+        <div class="jour">
+          <h3>Today</h3>
+        </div>
+        <div class="nav_jour">
+          <p>Popular</p>
+          <p>Newest</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/be3e888a-1215-47ba-ae7c-f4012fae60e1.png" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f3c6.png" alt="coupe">
+              <p>Trending right</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Gitlab Pages</h2>
+            <p>Websites for your GitLab projects, groups,or user account</p>
+          </div>
+          <div class='icone_text_global'>
+              <div class="icone">
+                <div class="icone_text fleche">
+                  <img src="images/fleche_haute.png" alt="upvote">
+                  <p>3</p>
+                </div>
+                <div class="icone_text fleche">
+                  <img src="images/fleche-basse.png" alt="downvote">
+                  <p>3</p>
+                </div>
+                <div class="icone_text">
+                  <i class="fa fa-heart"></i>
+                  <p>3</p>
+                </div>
+                <div class="icone_text commentaire">
+                  <i class="fa fa-comment"></i>
+                  <p>1</p>
+                </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 1</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/8aaa44e4-8c54-4855-bee2-11d85d898f4e.jpg" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f3c6.png" alt="coupe">
+              <p>#1 in Books</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Inventology</h2>
+            <p>How we dream up things that change the world</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>3</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>13</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>3</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>14</p>
+              </div>
+
+            </div>
+            <div class="web_text_icone">
+              <!-- <div class="web">web</div> -->
+              <!-- <div class="text_web">+ 1</div> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/8b148622-dd79-4bec-bbe7-5c2a01901cb9.jpg" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f525.png" alt="flamme">
+              <p>#1 in Tech</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Sity</h2>
+            <p>Share what you've done with your team and give feedback</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>27</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>2</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>3</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>4</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">iphone</div>
+              <div class="text_web">+ 1</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/a45c6741-384c-4d7b-ac29-c3964dcba82d.jpg" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f3c6.png" alt="coupe">
+              <p>#1 in Games</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Mystery Gaming Subscription</h2>
+            <p>3 Retro games delivered every month for £12</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>12</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>3</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>9</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>1</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 2</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/b941fb33-c846-4523-a772-c59a7722dea3.jpg" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f3c6.png" alt="coupe">
+              <p>#1 in Tech</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>qroom</h2>
+            <p>Type for free random music</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>23</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>12</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>1</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>6</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 2</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/cf2dbb1e-e716-4726-b2c7-875440176a98.png" alt="gitlab">
+            <!-- <div class="coupe">
+              <img src="images/1f3c6.png" alt="coupe">
+              <p>#1 in Tech</p>
+            </div> -->
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Sherlock</h2>
+            <p>Simple, powerful user engagement analytics</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>34</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>9</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>7</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>4</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 1</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/Capture d’écran 2016-04-06 à 17.00.30.png" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f525.png" alt="coupe">
+              <p>#1 in Tech</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Gavserdi Database</h2>
+            <p>Consectetur adipisicing elit</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>37</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>3</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>3</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>10</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 1</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/Capture d’écran 2016-04-06 à 17.01.33.png" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f525.png" alt="coupe">
+              <p>#1 in Tech</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Walid Yahia-Cherif</h2>
+            <p>J'aime mon bonnet</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>37</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>3</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>3</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>10</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 1</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/Capture d’écran 2016-04-06 à 17.03.48.png" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f525.png" alt="coupe">
+              <p>#1 in Tech</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Lydia Detienne</h2>
+            <p>J'aime les sushis</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>12</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>3</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>20</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>1</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 1</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card">
+        <div class=image_card>
+            <img src="images/d5036ea5-5791-4024-b3a6-b3e38987dc80.png" alt="gitlab">
+            <div class="coupe">
+              <img src="images/1f525.png" alt="coupe">
+              <p>#1 in Tech</p>
+            </div>
+          </div>
+
+        <div class="text_global_card">
+          <div class="text_card">
+            <h2>Matthieu Larrieu</h2>
+            <p>Je pédale vite</p>
+          </div>
+          <div class='icone_text_global'>
+            <div class="icone">
+              <div class="icone_text fleche">
+                <img src="images/fleche_haute.png" alt="upvote">
+                <p>37</p>
+              </div>
+              <div class="icone_text fleche">
+                <img src="images/fleche-basse.png" alt="downvote">
+                <p>3</p>
+              </div>
+              <div class="icone_text">
+                <i class="fa fa-heart"></i>
+                <p>3</p>
+              </div>
+              <div class="icone_text commentaire">
+                <i class="fa fa-comment"></i>
+                <p>10</p>
+              </div>
+            </div>
+            <div class="web_text_icone">
+              <div class="web">web</div>
+              <div class="text_web">+ 1</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!-- CENTRE -->
+
+  <!-- DROITE -->
+  <div class="global_droit">
+    <h4>Product Hunt is more fun with friends 😻</h4>
+    <span>Login to see what your friends are upvoting.</span>
+    <div class="reseaux_sociaux twitter">
+      <i class="fa fa-twitter"></i>
+      <p>log in with twitter</p>
+    </div>
+    <div class="reseaux_sociaux facebook">
+      <i class="fa fa-facebook"></i>
+      <p>log in with facebook</p>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
