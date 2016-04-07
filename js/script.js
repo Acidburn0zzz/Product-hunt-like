@@ -74,21 +74,24 @@ $(document).ready(function(){
           });
     // systeme coeur like
     // scroll
-      window.onscroll = function() {myFunction()};
-      window.onscroll = function() {
-              if (window.pageYOffset >= 350){
-                  $('#sidebar').css({position: 'fixed', left: '33px', top: '30px'});
-              }
-              else {
-                  $('#sidebar').css({position: '', right: '', top: ''});
-              }
-          }
+    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {
+            if (window.pageYOffset >= 350){
+                $('#sidebar').css({position: 'fixed',display: 'block', left: '122px', top: '31px'});
+                $('.global_centre').css({marginLeft: '165px'});
+            }
+            else {
+                $('#sidebar').css({position: '', left: '', top: ''});
+                $('.global_centre').css({marginLeft: ''});
+            }
+        }
     // scroll
 
     //navbar
     $('.fa-chevron-down').click(function(){
+      if ($(".modal-nav").css("display","block")) {}
       $(".modal-nav").css("display","block");
-      $(".modal-nav").css({position: 'absolute',top:'60px', left:'50px'});
+      $(".modal-nav").css({position: 'absolute',top:'30px', left:'50px'});
       // $(".triangle").css({position: 'absolute',top:'10px', left:'50px'})
     });
 });
@@ -100,7 +103,7 @@ function commentaireList() {
                "<div class=commentaire_global>"+
                   "<div class='pseudo_et_date'>"+
                       "<div class='pseudo'>"+d.pseudo+"</div>"+
-                      "<div class='date'>Lorem ipsum </div>"+
+                      "<div class='date'>-Protocol Administrator</div>"+
                   "</div>"+
                   "<div class='comments'>"+d.com+"</div>"
            );
