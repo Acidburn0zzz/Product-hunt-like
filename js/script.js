@@ -14,10 +14,8 @@ $(document).ready(function(){
 			var prev = $(this).closest('.card').prev();
 			var act = $(this).closest('.card');
             if(ratioLikePrev < ratioLike && prev.children(':first').text().trim() != 'Today'){
-                 var prev = $(this).closest('.card').prev();
-				 var act = $(this).closest('.card');
-
-				  prev.insertAfter(act);
+				act.addClass('card animated fadeIn');
+				prev.insertAfter(act);
              }
         }
     })
