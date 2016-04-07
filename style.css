@@ -6,8 +6,9 @@ body {
 #container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:center;
   flex-wrap: wrap;
+  padding: 30px;
 }
 
 
@@ -19,8 +20,10 @@ header {
   display: flex;
   flex-direction:row;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
-  padding: 10px;
+  padding: 30px;
+
 }
 
 .nav-left, .nav-right {
@@ -41,16 +44,18 @@ header {
 }
 
 .search-bar button {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .search-bar input {
-  width: 250px;
-  margin-top: 5px;
+  width: 220px;
+  margin-top: 7px;
+  color: #999;
+  font-size: 13px;
 }
 
 .nav-right .fa {
-  margin: 10px 10px 0 0;
+  margin: 5px 10px 0 0;
 }
 
 .fa {
@@ -68,6 +73,57 @@ header {
   background-image: url(images/simplon-logo.png);
   background-size: contain;
 }
+.image_header{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://ph-files.imgix.net/b3b645af-1758-4f44-864f-e8523cc9fa1c?auto=format");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 260px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 50px;
+  padding: 0 30px;
+}
+.flamme_header {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.titre_slider h1 {
+  margin-bottom: 0px;
+  font-size: 28px;
+}
+.upDown_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.upDown_header i {
+  color: white;
+  padding-top: 10px;
+}
+.upDown_header p {
+  margin-top: 0px;
+  font-size: 12px;
+}
+.upDown_header_global {
+  display: flex;
+  flex-direction: row;
+}
+.upDown_header i:hover{
+  color:#5898F1;
+  cursor: pointer;
+}
+.upDown_header p:hover{
+  color:#5898F1;
+  cursor: pointer;
+}
+.decentralized p {
+  margin-left: 40px;
+  font-size: 13px;
+}
 
 /*hearder*/
 
@@ -78,10 +134,14 @@ header {
 
 /*gauche*/
 #sidebar {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 25px;
   margin-right: 10px;
 
+}
+#home_min {
+  border-bottom: none;
+  padding-bottom: 0px;
 }
 #home_min a{
   text-transform:none;
@@ -89,7 +149,8 @@ header {
 .cat-title {
   font-weight:bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
   border-bottom: 1px solid rgb(242, 242, 242);
 }
 
@@ -103,21 +164,23 @@ header {
 
 ul {
   margin-bottom: 60px;
+  padding-left: 0px;
 }
 
 li {
   list-style:none;
 }
 
-li a{
+li a {
 list-style:none;
 text-decoration:none;
 color: #999999;
+padding: 5px;
 }
 
 li a:hover {
   color: #000000;
-  /*padding: 5px;*/
+  padding: 5px;
   background-color: #F3F3F3;
   border-radius: 2px;
   -webkit-border-radius: 3px;
@@ -131,6 +194,7 @@ li a:hover {
   display: flex;
   flex-direction:row;
   justify-content: space-between;
+  /*align-items: center;*/
 }
 
 #topics li:last-child {
@@ -139,27 +203,34 @@ li a:hover {
 }
 #topics span {
     color: red;
+    font-size: 12px;
+}
+#topics span:hover {
+    color: black;
 }
 
 .fire {
   background-image:url(images/1f525.png);
   background-size: contain;
-  width:15px;
-  height:15px;
-  margin:5px 0 0 20px;
-  /*flex-direction: row-reverse;*/
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+  margin-top: 7px;
 }
 
 /*gauche*/
 .global_centreEtDroit {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .global_centre {
   background-color: #fff;
   border-radius: 3px;
   padding: 20px;
   margin: 15px;
+  width: 650px;
+  border: 1px solid rgb(242,242,242);
 }
 .today {
   display: flex;
@@ -185,6 +256,9 @@ li a:hover {
   padding-left: 10px;
   border-left : 1px solid rgb(242,242,242);
   color: #999999;
+}
+.nav_jour p:hover {
+  text-decoration: underline;
 }
 .jour h3{
     margin: 0px;
@@ -216,7 +290,7 @@ li a:hover {
 }
 .text_global_card {
   margin-left: 25px;
-  width: 350px;
+  width: 470px;
 }
 .text_card p {
   font-size: 12px;
@@ -249,11 +323,12 @@ li a:hover {
   display: flex;
   flex-direction: row;
   align-items:center;
-  justify-content: center;
+  justify-content: space-around;
   border:1px solid rgb(242,242,242);
   border-radius:3px;
   padding: 2px 10px;
   margin-right: 10px;
+  background-color: white;
 }
 .icone_text:hover {
   cursor:pointer;
@@ -262,6 +337,13 @@ li a:hover {
 .icone_text p{
   margin: 0px;
   margin-left: 5px;
+  font-size: 12px;
+}
+.icone_text .fa.fa-play {
+  color: black;
+  font-size: 12px;
+}
+.icone_text .fa.fa-heart {
   font-size: 12px;
 }
 .web {
@@ -324,9 +406,12 @@ li a:hover {
   justify-content: center;
 }
 .reseaux_sociaux p {
-  font-size: 12px;
+  font-size: 11px;
   margin: 10px;
   text-transform: uppercase;
+}
+.reseaux_sociaux .fa{
+  color: white;
 }
 .reseaux_sociaux:hover {
 cursor:pointer;
@@ -338,4 +423,9 @@ cursor:pointer;
 }
 .facebook {
   background-color: #3B5998;
+}
+#fleche_up_svg {
+  width: 16px;
+  height: 16px;
+  color:white;
 }
