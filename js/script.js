@@ -19,6 +19,20 @@ $(document).ready(function(){
              }
         }
     })
+    var nbLike = 0;
+    $('.fa-heart').on('click', function(e) {
+      if(nbLike > 0){
+        $(this).css("color", "#999");
+        nbLike = 0;
+        $(this).siblings("#nb-like").html(parseInt($(this).siblings("#nb-like").html())-1);
+      }
+      else {
+       $(this).css("color","red");
+       nbLike = 1;
+       $(this).siblings("#nb-like").html(parseInt($(this).siblings("#nb-like").html())+1);
+      }
+
+          });  
 })
 
 function commentaire() {
