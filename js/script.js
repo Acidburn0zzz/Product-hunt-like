@@ -19,6 +19,7 @@ $(document).ready(function(){
              }
         }
     })
+    // systeme coeur like
     var nbLike = 0;
     $('.fa-heart').on('click', function(e) {
       if(nbLike > 0){
@@ -32,8 +33,21 @@ $(document).ready(function(){
        $(this).siblings("#nb-like").html(parseInt($(this).siblings("#nb-like").html())+1);
       }
 
-          });  
-})
+          });
+    // systeme coeur like
+    // scroll
+      window.onscroll = function() {myFunction()};
+      window.onscroll = function() {
+              if (window.pageYOffset >= 350){
+                  $('#sidebar').css({position: 'fixed', left: '33px', top: '30px'});
+              }
+              else {
+                  $('#sidebar').css({position: '', right: '', top: ''});
+              }
+          }
+    // scroll
+
+});
 
 function commentaire() {
   $('button').click(function() {

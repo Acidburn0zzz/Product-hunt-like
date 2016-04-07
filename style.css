@@ -429,3 +429,85 @@ cursor:pointer;
   height: 16px;
   color:white;
 }
+/*MODAL*/
+.modal_global {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.text_global {
+  display: flex;
+  flex-direction: row;
+}
+.modal_haute {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.text_card {
+  margin-bottom: 20px;
+}
+.upvote_downvote {
+  display: flex;
+  flex-direction: row;
+}
+.logos_reseaux_sociaux {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo_modal {
+  width: 55px;
+  height: 35px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.facebook_modal {
+  background-color: #3B5998;
+  margin-right: 10px
+}
+.twitter_modal .fa {
+  color: white;
+}
+.twitter_modal {
+  background-color:#00ACED ;
+}
+.facebook_modal .fa {
+  color: white;
+}
+.modal_bas {
+  border-top: 1px solid rgb(242,242,242);
+  font-size: 12px;
+}
+.pseudo_et_date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.pseudo {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.date {
+  font-size: 10px;
+  color:  #999;
+}
+.comments {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
