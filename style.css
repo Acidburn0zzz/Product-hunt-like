@@ -11,8 +11,36 @@ body {
   padding: 30px;
 }
 
+.container
+{display: flex;
+}
+.modal-box{
 
+	position: fixed;
+	width: 500px;
+	height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    display: none;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
 
+.modal-close{
+    color: white;
+    font-size: 20px;
+    float: right;
+}
+
+#modal-close{
+    display: none;
+}
+
+#modal-active{
+    display: block;
+}
 
 
 /*HEADER*/
@@ -24,6 +52,10 @@ header {
   background-color: white;
   padding: 30px;
 
+}
+
+.fa-chevron-down {
+  display:none;
 }
 
 .nav-left, .nav-right {
@@ -73,6 +105,54 @@ header {
   background-image: url(images/simplon-logo.png);
   background-size: contain;
 }
+
+.modal-nav {
+  display:none;
+}
+
+.triangle {
+  z-index: 1000;
+  margin-left: 18px;
+  width: 0;
+  height: 0;
+  border-width: 0 12.5px 15px 12.5px;
+  border-color: transparent transparent grey transparent;width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12.5px 15px 12.5px;
+  border-color: transparent transparent grey transparent;
+}
+
+.nav-responsive {
+  background-color: grey;
+  width: 150px;
+  height: 220px;
+  border-radius: 5px;
+}
+
+.nav-responsive li:first-child {
+  padding-top: 20px;
+}
+
+.nav-responsive ul {
+  display:flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-left: 10px;
+}
+.nav-responsive ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-responsive li {
+list-style-type: none;
+margin: 0 0 8px 10px;
+text-transform: uppercase;
+font-size: 12px;
+padding-left: 0px;
+}
+
+
 .image_header{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://ph-files.imgix.net/b3b645af-1758-4f44-864f-e8523cc9fa1c?auto=format");
   background-position: center;
@@ -510,4 +590,28 @@ cursor:pointer;
 .comments {
   font-size: 12px;
   margin-bottom: 20px;
+}
+
+/*MEDIA QUERIES*/
+
+
+@media (max-width:1000px) {
+.global_droit {display: none;}
+}
+@media (max-width:768px) {
+.fa-chevron-down {display:block; margin: 10px 0 0 10px;}
+.global_centre {width: 100%;margin: 0px;}
+.global_droit {display: none;}
+#sidebar {display: none;}
+.web_text_icone {display: none;}
+.search-bar {width: 200px;border: none;}
+.search-bar input{width: 55px;}
+header {padding: 5px;}
+.image_header {margin: 0px;}
+.card{padding-left: 0px;padding-right: 0px;}
+}
+
+@media (max-width:450px) {
+.icone {flex-wrap: wrap;}
+.global_centre {width: 460px;}
 }
