@@ -58,7 +58,8 @@ $(document).ready(function(){
 
     // systeme coeur like
     var nbLike = 0;
-    $('.fa-heart').on('click', function(e) {
+    $('.fa-heart').click(function(e) {
+        console.log('e')
       if(nbLike > 0){
         $(this).css("color", "#999");
         nbLike = 0;
