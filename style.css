@@ -558,6 +558,12 @@ cursor:pointer;
   font-size: 12px;
   width: 850px;
   padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.commentaire_global {
+  display: flex;
+  flex-direction: column;
 }
 .pseudo_et_date {
   display: flex;
@@ -650,9 +656,12 @@ cursor:pointer;
 header {padding: 5px;}
 .image_header {margin: 0px;}
 .card{padding-left: 0px;padding-right: 0px;}
+.modal_global {width: 600px;margin-left: 50px;margin-top: 30px;}
+.modal_bas {width: 550px;}
 }
 
 @media (max-width:450px) {
 .icone {flex-wrap: wrap;}
 .global_centre {width: 460px;}
+.modal_global{display: none;}
 }

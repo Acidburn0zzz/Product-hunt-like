@@ -45,8 +45,8 @@ $(document).ready(function(){
 
     $('.commentaire').click(function(){
         $('.modal-box').attr("id", "modal-active");
-        $('.text_card').append($(this).closest('.icone_text_global').prev().children('h2').text());
-        $('.text_card').append('</br>'+$(this).closest('.icone_text_global').prev().children('p').text());
+        $('.text_card_modal').append($(this).closest('.icone_text_global').prev().children('h2').text());
+        $('.text_card_modal').append('</br>'+$(this).closest('.icone_text_global').prev().children('p').text());
         $('.image-modal').append("<img src='"+$(this).closest('.text_global_card').prev().children(':first').attr('src')+"'>");
 
         commentaireList();
@@ -54,6 +54,9 @@ $(document).ready(function(){
 
     $('.modal-close').click(function(){
         $('.modal-box').attr("id", "modal-close");
+        $('.image-modal').text('');
+        $('.text_card_modal').text('');
+        $('.modal_bas').text('');
     })
 
     // systeme coeur like
