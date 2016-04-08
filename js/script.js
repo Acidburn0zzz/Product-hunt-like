@@ -105,12 +105,13 @@ $(document).ready(function(){
     // scroll
 
     //navbar
-    $('.fa-chevron-down').click(function(){
-      if ($(".modal-nav").css("display","block")) {}
-      $(".modal-nav").css("display","block");
-      $(".modal-nav").css({position: 'absolute',top:'30px', left:'50px'});
-      // $(".triangle").css({position: 'absolute',top:'10px', left:'50px'})
-    });
+
+      $('.modal-nav').hide();
+      $('.fa-chevron-down').click(function()
+      {
+        $('.modal-nav').slideToggle();   // si on veut faire un effet d'arriver par le coin gauche, on utilise .toggle à la place de slideToggle
+        return false;
+      });
 });
 
 function commentaireList() {
