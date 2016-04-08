@@ -580,11 +580,13 @@ cursor:pointer;
 .date {
   font-size: 10px;
   color:  #999;
+  margin-left: -13px;
+  margin-right: 19px;
 }
 .comments {
   font-size: 12px;
   margin-bottom: 25px;
-  margin-left: 20px;
+  margin-right: 10px;
 }
 .modal-box {
   position: fixed;
@@ -638,6 +640,9 @@ cursor:pointer;
     display: block;
 }
 
+.comment-txtarea{
+	width:168px
+}
 /*MEDIA QUERIES*/
 
 

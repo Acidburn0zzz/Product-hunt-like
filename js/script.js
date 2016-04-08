@@ -77,17 +77,31 @@ $(document).ready(function(){
           });
     // systeme coeur like
     // scroll
-    window.onscroll = function() {myFunction()};
+
+
+  window.onscroll = function() {myFunction()};
+
     window.onscroll = function() {
-            if (window.pageYOffset >= 350){
-                $('#sidebar').css({position: 'fixed',display: 'block', left: '122px', top: '31px'});
+
+            if (window.pageYOffset >= 350 && window.innerWidth >=800){
+
+                $('#sidebar').css({position: 'fixed',display: 'block', left: '124px', top: '31px'});
+
                 $('.global_centre').css({marginLeft: '165px'});
+
             }
+
             else {
+
                 $('#sidebar').css({position: '', left: '', top: ''});
+
                 $('.global_centre').css({marginLeft: ''});
+
             }
+
         }
+
+
     // scroll
 
     //navbar
